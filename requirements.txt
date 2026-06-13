@@ -1,0 +1,13 @@
+streamlit
+torch
+torchvision
+pandas
+numpy
+scikit-learn
+joblib
+Pillow
+matplotlib
+seaborn
+colorama
+ipywidgets
+notebook

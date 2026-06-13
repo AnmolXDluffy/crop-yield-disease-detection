@@ -1,0 +1,57 @@
+{
+  "yield_model": {
+    "rows": 28242,
+    "features": [
+      "Area",
+      "Item",
+      "Year",
+      "average_rain_fall_mm_per_year",
+      "pesticides_tonnes",
+      "avg_temp"
+    ],
+    "target": "hg/ha_yield",
+    "test_size": 5649,
+    "mae_hg_per_ha": 3452.627510178793,
+    "rmse_hg_per_ha": 9419.223489095491,
+    "r2": 0.9877687092146042
+  },
+  "crop_recommendation_model": {
+    "rows": 2200,
+    "features": [
+      "N",
+      "P",
+      "K",
+      "temperature",
+      "humidity",
+      "ph",
+      "rainfall"
+    ],
+    "target": "label",
+    "test_size": 440,
+    "accuracy": 0.9954545454545455,
+    "labels": [
+      "apple",
+      "banana",
+      "blackgram",
+      "chickpea",
+      "coconut",
+      "coffee",
+      "cotton",
+      "grapes",
+      "jute",
+      "kidneybeans",
+      "lentil",
+      "maize",
+      "mango",
+      "mothbeans",
+      "mungbean",
+      "muskmelon",
+      "orange",
+      "papaya",
+      "pigeonpeas",
+      "pomegranate",
+      "rice",
+      "watermelon"
+    ]
+  }
+}
