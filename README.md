@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Crop Disease, Yield Prediction and Recommendation System
 
 A machine learning project with three separate modules:
@@ -113,3 +114,7 @@ archive/New Plant Diseases Dataset(Augmented)/New Plant Diseases Dataset(Augment
 ## GitHub Notes
 
 The model files are kept under GitHub's 100 MB single-file limit. If future models become larger, use Git LFS or upload large models through GitHub Releases.
+=======
+# crop-yield-disease-detection
+An AI-powered system for crop yield prediction and plant disease detection using machine learning and agricultural data analysis.
+>>>>>>> bbd4f4591e3c83c1567b184581b7a18c7cf84b8d

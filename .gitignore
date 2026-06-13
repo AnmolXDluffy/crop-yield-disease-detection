@@ -1,39 +1,69 @@
 # Python
-__pycache__/
+
+**pycache**/
 *.py[cod]
 *.pyo
 *.pyd
 .Python
+
+# Virtual Environments
+
 .venv/
 venv/
 env/
 ENV/
+.env
 
 # Jupyter
+
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
 
 # Streamlit
+
 .streamlit/secrets.toml
 
-# OS / editor
-.DS_Store
-Thumbs.db
+# VS Code / IDE
+
 .vscode/
 .idea/
 
-# Local logs and temporary files
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+
 *.log
 *.tmp
 *.bak
 
-# Compressed downloads
+# Build / Distribution
+
+build/
+dist/
+downloads/
+.eggs/
+*.egg-info/
+*.egg
+
+# Test / Cache
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Compressed files
+
 *.zip
 *.rar
 *.7z
 *.tar
 *.gz
 
-# Large image training dataset is kept local.
-# The trained disease model and class list are stored in models/.
+# Local datasets not pushed to GitHub
+
 archive/
