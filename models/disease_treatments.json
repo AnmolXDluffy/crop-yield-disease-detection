@@ -1,0 +1,738 @@
+{
+  "Apple___Apple_scab": {
+    "status": "diseased",
+    "urgency": "medium",
+    "summary": "Apple scab is a fungal leaf and fruit disease that spreads quickly in wet weather.",
+    "immediate_action": [
+      "Remove heavily infected leaves and fallen debris from under the tree.",
+      "Avoid overhead watering and improve airflow through pruning."
+    ],
+    "organic_treatment": [
+      "Use sanitation, pruning, and mulching to reduce spread.",
+      "Apply sulfur or other approved organic fungicides if they are labeled for your crop."
+    ],
+    "chemical_treatment": [
+      "Use a locally registered fungicide early in the season and follow the label exactly."
+    ],
+    "prevention": [
+      "Choose resistant varieties when possible.",
+      "Keep the orchard floor clean and dry as much as possible."
+    ]
+  },
+  "Apple___Black_rot": {
+    "status": "diseased",
+    "urgency": "high",
+    "summary": "Black rot can spread into fruit, leaves, and twigs and should be managed quickly.",
+    "immediate_action": [
+      "Prune out infected twigs and remove mummified fruit.",
+      "Destroy infected plant material instead of composting it."
+    ],
+    "organic_treatment": [
+      "Improve airflow and reduce moisture around the canopy.",
+      "Use sanitation as the main low-impact control."
+    ],
+    "chemical_treatment": [
+      "Apply a registered fungicide as recommended for your region and crop stage."
+    ],
+    "prevention": [
+      "Remove fallen fruit and leaves regularly.",
+      "Avoid injuries to fruit and branches."
+    ]
+  },
+  "Apple___Cedar_apple_rust": {
+    "status": "diseased",
+    "urgency": "medium",
+    "summary": "Cedar apple rust is a fungal disease that cycles between apple trees and nearby junipers or cedars.",
+    "immediate_action": [
+      "Remove heavily infected leaves and fruit if practical.",
+      "Inspect nearby junipers or cedars for rust galls."
+    ],
+    "organic_treatment": [
+      "Prune for airflow and reduce leaf wetness.",
+      "Use resistant apple varieties in future plantings."
+    ],
+    "chemical_treatment": [
+      "Use a labeled fungicide preventive program if disease pressure is high."
+    ],
+    "prevention": [
+      "Avoid planting apples close to susceptible cedar hosts.",
+      "Monitor in spring when infection pressure is highest."
+    ]
+  },
+  "Apple___healthy": {
+    "status": "healthy",
+    "urgency": "low",
+    "summary": "The leaf appears healthy. Keep monitoring and maintain good orchard hygiene.",
+    "immediate_action": [
+      "Continue routine scouting for early symptoms.",
+      "Keep watering and pruning practices consistent."
+    ],
+    "organic_treatment": [
+      "Use mulching, spacing, and sanitation as preventive care."
+    ],
+    "chemical_treatment": [
+      "No treatment is needed when the tree is healthy."
+    ],
+    "prevention": [
+      "Inspect new growth after rainy periods.",
+      "Use resistant varieties and clean tools."
+    ]
+  },
+  "Blueberry___healthy": {
+    "status": "healthy",
+    "urgency": "low",
+    "summary": "The blueberry leaf appears healthy. Keep monitoring for stress, pests, and fungal spots.",
+    "immediate_action": [
+      "Continue routine plant inspection.",
+      "Maintain proper irrigation and soil acidity."
+    ],
+    "organic_treatment": [
+      "Use mulch and sanitation to reduce stress."
+    ],
+    "chemical_treatment": [
+      "No treatment is needed when the plant is healthy."
+    ],
+    "prevention": [
+      "Avoid water stress and overcrowding.",
+      "Remove debris from around the plant."
+    ]
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "status": "diseased",
+    "urgency": "medium",
+    "summary": "Powdery mildew is a fungal disease that thrives in crowded canopies and poor airflow.",
+    "immediate_action": [
+      "Remove heavily infected leaves and shoots.",
+      "Prune to improve airflow and light penetration."
+    ],
+    "organic_treatment": [
+      "Use sulfur or other labeled organic fungicides if suitable.",
+      "Keep the canopy open and avoid excess nitrogen."
+    ],
+    "chemical_treatment": [
+      "Use a registered fungicide if the disease is spreading."
+    ],
+    "prevention": [
+      "Avoid overcrowding and overhead watering.",
+      "Monitor new growth closely."
+    ]
+  },
+  "Cherry_(including_sour)___healthy": {
+    "status": "healthy",
+    "urgency": "low",
+    "summary": "The cherry leaf appears healthy. Keep up regular monitoring and pruning.",
+    "immediate_action": [
+      "Inspect new leaves weekly during active growth.",
+      "Keep the tree well spaced and ventilated."
+    ],
+    "organic_treatment": [
+      "Use sanitation and pruning as routine prevention."
+    ],
+    "chemical_treatment": [
+      "No treatment is needed when the tree is healthy."
+    ],
+    "prevention": [
+      "Remove fallen debris and water at the base only."
+    ]
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "status": "diseased",
+    "urgency": "medium",
+    "summary": "Gray leaf spot is a fungal disease that reduces photosynthesis and can lower yield.",
+    "immediate_action": [
+      "Check nearby leaves and remove severely infected debris if possible.",
+      "Reduce leaf wetness by improving field airflow where practical."
+    ],
+    "organic_treatment": [
+      "Rotate crops and manage crop residue carefully.",
+      "Use resistant maize varieties when available."
+    ],
+    "chemical_treatment": [
+      "Use a labeled fungicide program if local pressure is high."
+    ],
+    "prevention": [
+      "Rotate away from maize and avoid continuous corn planting.",
+      "Use varieties bred for disease resistance."
+    ]
+  },
+  "Corn_(maize)___Common_rust_": {
+    "status": "diseased",
+    "urgency": "medium",
+    "summary": "Common rust is a fungal disease that is often worse in cool, humid weather.",
+    "immediate_action": [
+      "Inspect neighboring plants for early pustules.",
+      "Reduce stress and avoid excess canopy moisture."
+    ],
+    "organic_treatment": [
+      "Use resistant hybrids when possible.",
+      "Keep fields clean of volunteer maize."
+    ],
+    "chemical_treatment": [
+      "Use a fungicide only when disease pressure and growth stage justify it."
+    ],
+    "prevention": [
+      "Monitor after cool, wet periods.",
+      "Rotate crops and destroy volunteer hosts."
+    ]
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "status": "diseased",
+    "urgency": "high",
+    "summary": "Northern leaf blight can spread fast and cause major leaf loss if conditions stay wet.",
+    "immediate_action": [
+      "Inspect the field and remove severe residue sources where practical.",
+      "Reduce canopy wetness and avoid unnecessary irrigation."
+    ],
+    "organic_treatment": [
+      "Use resistant hybrids and residue management.",
+      "Keep rotation intervals wide."
+    ],
+    "chemical_treatment": [
+      "Use a registered fungicide if the infection is progressing in the upper canopy."
+    ],
+    "prevention": [
+      "Rotate crops and manage infected residue.",
+      "Choose resistant maize hybrids."
+    ]
+  },
+  "Corn_(maize)___healthy": {
+    "status": "healthy",
+    "urgency": "low",
+    "summary": "The maize leaf appears healthy. Keep monitoring after rain and during rapid growth.",
+    "immediate_action": [
+      "Continue routine field scouting.",
+      "Maintain balanced irrigation and nutrition."
+    ],
+    "organic_treatment": [
+      "Use rotation and residue management as preventive care."
+    ],
+    "chemical_treatment": [
+      "No treatment is needed when the crop is healthy."
+    ],
+    "prevention": [
+      "Choose resistant hybrids and manage volunteer maize."
+    ]
+  },
+  "Grape___Black_rot": {
+    "status": "diseased",
+    "urgency": "high",
+    "summary": "Black rot can destroy leaves and fruit clusters if it is not controlled early.",
+    "immediate_action": [
+      "Remove infected clusters and mummified berries.",
+      "Prune out diseased canes and clean up debris."
+    ],
+    "organic_treatment": [
+      "Improve airflow and reduce canopy moisture.",
+      "Use sanitation and fruit cluster removal as key controls."
+    ],
+    "chemical_treatment": [
+      "Use a registered fungicide program during susceptible growth stages."
+    ],
+    "prevention": [
+      "Remove mummies and fallen fruit from the vineyard floor.",
+      "Avoid overcrowding and keep pruning sharp."
+    ]
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "status": "diseased",
+    "urgency": "high",
+    "summary": "Esca is a trunk and wood disease with no simple cure, so infected plants need careful management.",
+    "immediate_action": [
+      "Mark affected vines and remove severely declining wood if advised locally.",
+      "Avoid stressing the vine with poor pruning or water stress."
+    ],
+    "organic_treatment": [
+      "Focus on sanitation, pruning hygiene, and stress reduction.",
+      "Remove infected wood carefully and dispose of it safely."
+    ],
+    "chemical_treatment": [
+      "There is no reliable curative spray; follow local expert guidance on vineyard protection."
+    ],
+    "prevention": [
+      "Use clean pruning tools and avoid large pruning wounds.",
+      "Keep vines vigorous with balanced nutrition and irrigation."
+    ]
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "status": "diseased",
+    "urgency": "medium",
+    "summary": "Leaf blight and leaf spot reduce vine vigor and spread in wet canopies.",
+    "immediate_action": [
+      "Remove heavily infected leaves where practical.",
+      "Open the canopy to improve drying after rain."
+    ],
+    "organic_treatment": [
+      "Use pruning, spacing, and sanitation to reduce spread.",
+      "Keep irrigation off the foliage."
+    ],
+    "chemical_treatment": [
+      "Use a locally approved fungicide if the disease pressure is persistent."
+    ],
+    "prevention": [
+      "Avoid overhead irrigation and overcrowding.",
+      "Clean up fallen leaf litter."
+    ]
+  },
+  "Grape___healthy": {
+    "status": "healthy",
+    "urgency": "low",
+    "summary": "The grape leaf appears healthy. Keep regular scouting and canopy management.",
+    "immediate_action": [
+      "Continue routine inspection of leaves and clusters.",
+      "Keep the canopy open for airflow."
+    ],
+    "organic_treatment": [
+      "Use pruning and sanitation as preventive care."
+    ],
+    "chemical_treatment": [
+      "No treatment is needed when the vine is healthy."
+    ],
+    "prevention": [
+      "Avoid water on foliage and maintain clean tools."
+    ]
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "status": "diseased",
+    "urgency": "high",
+    "summary": "Citrus greening has no cure, so infected trees must be managed aggressively.",
+    "immediate_action": [
+      "Remove or isolate infected trees based on local guidance.",
+      "Control insect vectors such as psyllids immediately."
+    ],
+    "organic_treatment": [
+      "Use disease-free nursery stock and strict sanitation.",
+      "Prune and destroy heavily affected material."
+    ],
+    "chemical_treatment": [
+      "Use locally registered vector-control products if recommended by extension services."
+    ],
+    "prevention": [
+      "Plant certified healthy trees only.",
+      "Monitor regularly for vector insects and symptoms."
+    ]
+  },
+  "Peach___Bacterial_spot": {
+    "status": "diseased",
+    "urgency": "medium",
+    "summary": "Bacterial spot spreads with rain splash and can weaken leaves and fruit.",
+    "immediate_action": [
+      "Avoid overhead watering and remove heavily infected leaves if possible.",
+      "Reduce stress and keep the tree well pruned."
+    ],
+    "organic_treatment": [
+      "Use sanitation and canopy airflow as the main controls.",
+      "Avoid excessive nitrogen that drives soft growth."
+    ],
+    "chemical_treatment": [
+      "Use copper-based or other registered bactericides only if labeled for your crop."
+    ],
+    "prevention": [
+      "Choose resistant cultivars when available.",
+      "Keep tools clean and avoid working when foliage is wet."
+    ]
+  },
+  "Peach___healthy": {
+    "status": "healthy",
+    "urgency": "low",
+    "summary": "The peach leaf appears healthy. Continue monitoring and good orchard hygiene.",
+    "immediate_action": [
+      "Inspect leaves and fruit regularly.",
+      "Keep irrigation and pruning balanced."
+    ],
+    "organic_treatment": [
+      "Use sanitation and airflow management to prevent disease."
+    ],
+    "chemical_treatment": [
+      "No treatment is needed when the tree is healthy."
+    ],
+    "prevention": [
+      "Avoid wet foliage and keep tools disinfected."
+    ]
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "status": "diseased",
+    "urgency": "high",
+    "summary": "Bacterial spot can move quickly in peppers and should be managed early.",
+    "immediate_action": [
+      "Remove badly affected leaves if practical.",
+      "Avoid touching wet plants and sanitize tools."
+    ],
+    "organic_treatment": [
+      "Use crop rotation, mulch, and drip irrigation where possible.",
+      "Keep infected debris away from healthy plants."
+    ],
+    "chemical_treatment": [
+      "Use a labeled copper product or other locally approved bactericide if recommended."
+    ],
+    "prevention": [
+      "Use clean seed or transplants and avoid overhead watering.",
+      "Rotate away from peppers and tomatoes."
+    ]
+  },
+  "Pepper,_bell___healthy": {
+    "status": "healthy",
+    "urgency": "low",
+    "summary": "The pepper leaf appears healthy. Keep up routine monitoring and sanitation.",
+    "immediate_action": [
+      "Continue regular inspection.",
+      "Keep leaves dry and tools clean."
+    ],
+    "organic_treatment": [
+      "Use mulch and drip irrigation as preventive care."
+    ],
+    "chemical_treatment": [
+      "No treatment is needed when the plant is healthy."
+    ],
+    "prevention": [
+      "Avoid splashing water and overcrowding."
+    ]
+  },
+  "Potato___Early_blight": {
+    "status": "diseased",
+    "urgency": "medium",
+    "summary": "Early blight is a common fungal leaf disease that can spread under warm, wet conditions.",
+    "immediate_action": [
+      "Remove heavily infected lower leaves if practical.",
+      "Avoid watering the foliage and reduce plant stress."
+    ],
+    "organic_treatment": [
+      "Use mulching, rotation, and sanitation to slow spread.",
+      "Support the plant with balanced nutrition."
+    ],
+    "chemical_treatment": [
+      "Use a labeled fungicide if disease pressure is increasing."
+    ],
+    "prevention": [
+      "Rotate crops and clean up old potato debris.",
+      "Keep the canopy dry."
+    ]
+  },
+  "Potato___Late_blight": {
+    "status": "diseased",
+    "urgency": "high",
+    "summary": "Late blight is a serious disease that can destroy potato foliage and spread fast in cool, wet weather.",
+    "immediate_action": [
+      "Remove or isolate infected plants immediately.",
+      "Avoid moving through wet plants and disinfect tools."
+    ],
+    "organic_treatment": [
+      "Destroy infected foliage and improve airflow around the crop.",
+      "Use strict sanitation and avoid composting diseased material."
+    ],
+    "chemical_treatment": [
+      "Use a locally approved fungicide program as soon as the disease is suspected."
+    ],
+    "prevention": [
+      "Plant certified seed and avoid overhead watering.",
+      "Monitor closely during cool, wet periods."
+    ]
+  },
+  "Potato___healthy": {
+    "status": "healthy",
+    "urgency": "low",
+    "summary": "The potato leaf appears healthy. Keep monitoring because blights can develop quickly.",
+    "immediate_action": [
+      "Continue weekly field checks.",
+      "Keep plants dry and well spaced."
+    ],
+    "organic_treatment": [
+      "Use mulch and rotation to reduce future disease pressure."
+    ],
+    "chemical_treatment": [
+      "No treatment is needed when the crop is healthy."
+    ],
+    "prevention": [
+      "Remove volunteer potatoes and old debris."
+    ]
+  },
+  "Raspberry___healthy": {
+    "status": "healthy",
+    "urgency": "low",
+    "summary": "The raspberry leaf appears healthy. Keep monitoring for cane and leaf diseases.",
+    "immediate_action": [
+      "Inspect canes and leaves regularly.",
+      "Keep the planting open and manageable."
+    ],
+    "organic_treatment": [
+      "Use pruning and sanitation as routine prevention."
+    ],
+    "chemical_treatment": [
+      "No treatment is needed when the plant is healthy."
+    ],
+    "prevention": [
+      "Remove old fruiting canes and debris."
+    ]
+  },
+  "Soybean___healthy": {
+    "status": "healthy",
+    "urgency": "low",
+    "summary": "The soybean leaf appears healthy. Keep scouting for rust, blight, and insect stress.",
+    "immediate_action": [
+      "Continue routine scouting.",
+      "Maintain balanced nutrition and irrigation."
+    ],
+    "organic_treatment": [
+      "Use rotation and residue management to reduce disease pressure."
+    ],
+    "chemical_treatment": [
+      "No treatment is needed when the crop is healthy."
+    ],
+    "prevention": [
+      "Watch for sudden weather-driven disease outbreaks."
+    ]
+  },
+  "Squash___Powdery_mildew": {
+    "status": "diseased",
+    "urgency": "medium",
+    "summary": "Powdery mildew can cover squash leaves quickly, especially in crowded plantings.",
+    "immediate_action": [
+      "Remove heavily infected leaves where practical.",
+      "Improve airflow around the plants."
+    ],
+    "organic_treatment": [
+      "Use sulfur or other labeled organic fungicides if suitable.",
+      "Avoid excess nitrogen and overhead watering."
+    ],
+    "chemical_treatment": [
+      "Use a registered fungicide if the disease is spreading."
+    ],
+    "prevention": [
+      "Space plants well and keep foliage dry.",
+      "Monitor weekly during warm weather."
+    ]
+  },
+  "Strawberry___Leaf_scorch": {
+    "status": "diseased",
+    "urgency": "medium",
+    "summary": "Leaf scorch reduces strawberry vigor and can spread in humid conditions.",
+    "immediate_action": [
+      "Remove heavily damaged leaves if practical.",
+      "Keep plants well spaced and reduce humidity around the canopy."
+    ],
+    "organic_treatment": [
+      "Use mulch, sanitation, and drip irrigation where possible."
+    ],
+    "chemical_treatment": [
+      "Use a locally approved fungicide if the infection is progressing."
+    ],
+    "prevention": [
+      "Avoid overhead watering and overcrowding.",
+      "Keep planting beds clean."
+    ]
+  },
+  "Strawberry___healthy": {
+    "status": "healthy",
+    "urgency": "low",
+    "summary": "The strawberry leaf appears healthy. Keep scouting regularly and maintain clean beds.",
+    "immediate_action": [
+      "Continue routine inspection.",
+      "Remove dead leaves and runners as needed."
+    ],
+    "organic_treatment": [
+      "Use mulch and drip irrigation to reduce disease pressure."
+    ],
+    "chemical_treatment": [
+      "No treatment is needed when the plant is healthy."
+    ],
+    "prevention": [
+      "Keep beds clean and avoid splashing water."
+    ]
+  },
+  "Tomato___Bacterial_spot": {
+    "status": "diseased",
+    "urgency": "high",
+    "summary": "Bacterial spot spreads with water splash and can damage both foliage and fruit.",
+    "immediate_action": [
+      "Remove the worst affected leaves and isolate nearby plants if possible.",
+      "Avoid touching wet plants and sanitize tools."
+    ],
+    "organic_treatment": [
+      "Use mulch and drip irrigation to reduce splash.",
+      "Keep the canopy open and avoid excess nitrogen."
+    ],
+    "chemical_treatment": [
+      "Use a labeled copper-based product or other locally approved bactericide if recommended."
+    ],
+    "prevention": [
+      "Rotate away from tomatoes and peppers.",
+      "Use clean seed and transplants."
+    ]
+  },
+  "Tomato___Early_blight": {
+    "status": "diseased",
+    "urgency": "medium",
+    "summary": "Early blight causes leaf spots and leaf drop, especially in warm and humid conditions.",
+    "immediate_action": [
+      "Remove lower infected leaves where practical.",
+      "Water at the base and keep foliage dry."
+    ],
+    "organic_treatment": [
+      "Mulch around plants and prune for airflow.",
+      "Keep crop residue away from healthy plants."
+    ],
+    "chemical_treatment": [
+      "Use a registered fungicide if disease spread is increasing."
+    ],
+    "prevention": [
+      "Rotate crops and clean up old tomato debris.",
+      "Avoid overcrowding."
+    ]
+  },
+  "Tomato___Late_blight": {
+    "status": "diseased",
+    "urgency": "high",
+    "summary": "Late blight is a rapid-spreading disease that needs immediate attention.",
+    "immediate_action": [
+      "Remove infected plants or leaves immediately if local guidance allows.",
+      "Avoid watering foliage and move healthy plants away from infected material."
+    ],
+    "organic_treatment": [
+      "Destroy infected debris and improve airflow.",
+      "Use strict sanitation and keep plants dry."
+    ],
+    "chemical_treatment": [
+      "Use a locally approved fungicide program as soon as late blight is suspected."
+    ],
+    "prevention": [
+      "Monitor closely during cool, wet weather.",
+      "Plant resistant varieties if available."
+    ]
+  },
+  "Tomato___Leaf_Mold": {
+    "status": "diseased",
+    "urgency": "medium",
+    "summary": "Leaf mold grows in humid, poorly ventilated conditions and can weaken tomato plants.",
+    "immediate_action": [
+      "Improve airflow and reduce humidity around the plants.",
+      "Remove heavily infected foliage if practical."
+    ],
+    "organic_treatment": [
+      "Use spacing, pruning, and drip irrigation.",
+      "Keep greenhouse or tunnel humidity under control."
+    ],
+    "chemical_treatment": [
+      "Use a labeled fungicide if the disease is established and spreading."
+    ],
+    "prevention": [
+      "Avoid overhead watering and overcrowding.",
+      "Ventilate protected growing areas well."
+    ]
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "status": "diseased",
+    "urgency": "medium",
+    "summary": "Septoria leaf spot causes many small spots and defoliation if not managed.",
+    "immediate_action": [
+      "Remove the lowest infected leaves carefully.",
+      "Keep water off the foliage and mulch the soil."
+    ],
+    "organic_treatment": [
+      "Use mulch, spacing, and sanitation to reduce splash spread.",
+      "Prune lower leaves for better airflow."
+    ],
+    "chemical_treatment": [
+      "Use a registered fungicide if disease is expanding."
+    ],
+    "prevention": [
+      "Rotate crops and avoid working wet plants.",
+      "Remove fallen leaf debris promptly."
+    ]
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "status": "diseased",
+    "urgency": "medium",
+    "summary": "Spider mites are pests rather than a fungus, and they can quickly stress tomato leaves.",
+    "immediate_action": [
+      "Check the undersides of leaves and isolate heavily infested plants if possible.",
+      "Wash the plant gently with water where appropriate."
+    ],
+    "organic_treatment": [
+      "Encourage beneficial insects and keep dust down.",
+      "Use horticultural soap or oil only if labeled for your crop."
+    ],
+    "chemical_treatment": [
+      "Use a registered miticide only when infestation is significant and label directions allow it."
+    ],
+    "prevention": [
+      "Keep plants well watered and avoid dusty, stressed conditions.",
+      "Inspect the underside of leaves regularly."
+    ]
+  },
+  "Tomato___Target_Spot": {
+    "status": "diseased",
+    "urgency": "medium",
+    "summary": "Target spot causes leaf lesions and can reduce plant vigor under warm, humid conditions.",
+    "immediate_action": [
+      "Remove heavily infected leaves if practical.",
+      "Increase airflow and keep foliage dry."
+    ],
+    "organic_treatment": [
+      "Use mulch, sanitation, and pruning to lower disease pressure."
+    ],
+    "chemical_treatment": [
+      "Use a labeled fungicide if the disease is spreading."
+    ],
+    "prevention": [
+      "Rotate crops and keep plant debris out of the bed.",
+      "Avoid overcrowding."
+    ]
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "status": "diseased",
+    "urgency": "high",
+    "summary": "This virus has no cure, so focus on removing infected plants and controlling whiteflies.",
+    "immediate_action": [
+      "Remove infected plants to limit spread.",
+      "Control whiteflies and other local vectors immediately."
+    ],
+    "organic_treatment": [
+      "Use reflective mulch, insect netting, and sanitation where practical.",
+      "Plant resistant varieties when available."
+    ],
+    "chemical_treatment": [
+      "Use locally registered vector-control products only if advised by local experts."
+    ],
+    "prevention": [
+      "Start with healthy transplants and inspect them carefully.",
+      "Keep weeds and alternate hosts under control."
+    ]
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "status": "diseased",
+    "urgency": "high",
+    "summary": "Tomato mosaic virus has no cure and can spread through tools, hands, and plant material.",
+    "immediate_action": [
+      "Remove infected plants and keep them away from healthy ones.",
+      "Disinfect tools and wash hands after handling plants."
+    ],
+    "organic_treatment": [
+      "Use strict sanitation and resistant varieties.",
+      "Avoid tobacco products near the crop if that is a known local risk."
+    ],
+    "chemical_treatment": [
+      "There is no curative chemical treatment; focus on sanitation and resistant plants."
+    ],
+    "prevention": [
+      "Use clean seed, clean tools, and resistant cultivars.",
+      "Do not save seed from infected plants."
+    ]
+  },
+  "Tomato___healthy": {
+    "status": "healthy",
+    "urgency": "low",
+    "summary": "The tomato leaf appears healthy. Keep monitoring because tomatoes can develop disease quickly.",
+    "immediate_action": [
+      "Continue weekly leaf checks.",
+      "Keep the plant well spaced and watered at the base."
+    ],
+    "organic_treatment": [
+      "Use mulch and pruning to keep leaves off the soil."
+    ],
+    "chemical_treatment": [
+      "No treatment is needed when the plant is healthy."
+    ],
+    "prevention": [
+      "Rotate crops and sanitize tools regularly."
+    ]
+  }
+}

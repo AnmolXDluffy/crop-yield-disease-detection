@@ -17,6 +17,7 @@ YIELD_MODEL_PATH = MODELS_DIR / "yield_model.pkl"
 RECOMMENDATION_MODEL_PATH = MODELS_DIR / "crop_recommendation_model.pkl"
 METRICS_PATH = MODELS_DIR / "model_metrics.json"
 DISEASE_CLASSES_PATH = MODELS_DIR / "disease_classes.json"
+DISEASE_TREATMENT_PATH = MODELS_DIR / "disease_treatments.json"
 
 DISEASE_TRAIN_DIR = BASE_DIR / "archive" / "New Plant Diseases Dataset(Augmented)" / "New Plant Diseases Dataset(Augmented)" / "train"
 YIELD_DATA_PATH = BASE_DIR / "yield_data" / "yield_df.csv"
@@ -102,6 +103,45 @@ st.markdown(
         background: #ffffff;
         box-shadow: 0 16px 40px rgba(15, 23, 42, 0.09);
         margin-bottom: 1rem;
+    }
+    .advice-panel {
+        padding: 1.05rem 1.1rem;
+        border-radius: 14px;
+        border: 1px solid rgba(15, 23, 42, 0.10);
+        background: linear-gradient(180deg, rgba(248,250,252,0.98), rgba(241,245,249,0.98));
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.07);
+        margin-top: 1rem;
+    }
+    .advice-panel h4 {
+        margin-bottom: 0.35rem;
+    }
+    .advice-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 0.7rem;
+    }
+    .advice-pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.28rem 0.68rem;
+        border-radius: 999px;
+        font-size: 0.82rem;
+        font-weight: 700;
+        background: rgba(15, 23, 42, 0.06);
+        color: #172033;
+    }
+    .advice-pill.high {
+        background: rgba(220, 38, 38, 0.10);
+        color: #991b1b;
+    }
+    .advice-pill.medium {
+        background: rgba(217, 119, 6, 0.12);
+        color: #92400e;
+    }
+    .advice-pill.low {
+        background: rgba(22, 163, 74, 0.10);
+        color: #166534;
     }
     div.stButton > button:first-child {
         border-radius: 999px;
@@ -250,6 +290,13 @@ def load_disease_classes():
     return sorted(path.name for path in DISEASE_TRAIN_DIR.iterdir() if path.is_dir())
 
 
+@st.cache_data(show_spinner=False)
+def load_disease_treatments():
+    if not DISEASE_TREATMENT_PATH.exists():
+        return {}
+    return json.loads(DISEASE_TREATMENT_PATH.read_text(encoding="utf-8"))
+
+
 @st.cache_resource(show_spinner=False)
 def load_disease_model():
     device = get_device()
@@ -301,6 +348,28 @@ def disease_predict(image):
         for conf, idx in zip(top_conf, top_idx)
     ]
     return classes[pred_idx.item()], confidence.item(), top_predictions
+
+
+def get_treatment_guidance(label):
+    treatments = load_disease_treatments()
+    return treatments.get(label, {
+        "status": "diseased",
+        "urgency": "medium",
+        "summary": "The model predicted a disease class, but no treatment entry was found for this label.",
+        "immediate_action": [
+            "Isolate the plant if symptoms are spreading fast.",
+            "Check the plant against a local extension guide or agronomist.",
+        ],
+        "organic_treatment": [
+            "Use sanitation, pruning, spacing, and other integrated pest management steps.",
+        ],
+        "chemical_treatment": [
+            "If appropriate for the crop and disease, use a locally registered product and follow the label exactly.",
+        ],
+        "prevention": [
+            "Monitor nearby plants, remove infected debris, and keep tools clean.",
+        ],
+    })
 
 
 def yield_predict(area, crop, year, rainfall, pesticides, avg_temp):
@@ -397,6 +466,38 @@ with disease_tab:
                 ])
                 st.dataframe(top_df, use_container_width=True, hide_index=True)
                 st.markdown("</div>", unsafe_allow_html=True)
+                guidance = get_treatment_guidance(pred_class)
+                urgency = str(guidance.get("urgency", "medium")).lower()
+                status = str(guidance.get("status", "diseased")).title()
+                st.markdown(
+                    f"""
+                    <div class="advice-panel">
+                        <h4>What to do next</h4>
+                        <div class="advice-meta">
+                            <span class="advice-pill {urgency}">Urgency: {urgency.title()}</span>
+                            <span class="advice-pill">{status}</span>
+                        </div>
+                        <p>{guidance.get("summary", "No summary available for this prediction.")}</p>
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
+                immediate_action = guidance.get("immediate_action", [])
+                organic_treatment = guidance.get("organic_treatment", [])
+                chemical_treatment = guidance.get("chemical_treatment", [])
+                prevention = guidance.get("prevention", [])
+                if immediate_action:
+                    st.markdown("**Immediate action**")
+                    st.markdown("\n".join(f"- {item}" for item in immediate_action))
+                if organic_treatment:
+                    st.markdown("**Organic / low-impact options**")
+                    st.markdown("\n".join(f"- {item}" for item in organic_treatment))
+                if chemical_treatment:
+                    st.markdown("**Chemical options**")
+                    st.markdown("\n".join(f"- {item}" for item in chemical_treatment))
+                if prevention:
+                    st.markdown("**Prevention**")
+                    st.markdown("\n".join(f"- {item}" for item in prevention))
     else:
         st.info("Upload one or more leaf images to begin.")
 

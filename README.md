@@ -78,7 +78,7 @@ http://localhost:8501
 
 ### Disease Detection
 
-Upload one or more leaf images. The app predicts the crop/disease class using the trained PyTorch model.
+Upload one or more leaf images. The app predicts the crop/disease class using the trained PyTorch model and shows next-step treatment guidance from `models/disease_treatments.json`.
 
 ### Yield Prediction
 
@@ -107,13 +107,11 @@ archive/New Plant Diseases Dataset(Augmented)/New Plant Diseases Dataset(Augment
 ## Important Limitations
 
 - Disease detection, yield prediction, and crop recommendation are intentionally separate modules.
+- Disease detection now includes a structured treatment/advice panel for each predicted disease class.
 - Yield prediction supports the crops available in the yield dataset, not every crop in the disease dataset.
 - Predictions are educational/project outputs and should not replace expert agricultural advice.
 
 ## GitHub Notes
 
 The model files are kept under GitHub's 100 MB single-file limit. If future models become larger, use Git LFS or upload large models through GitHub Releases.
-=======
-# crop-yield-disease-detection
-An AI-powered system for crop yield prediction and plant disease detection using machine learning and agricultural data analysis.
 
